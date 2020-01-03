@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#51b53f</color>
+    <color name="colorPrimaryDark">#439f30</color>
+    <color name="colorAccent">#59ff40</color>
+    <color name="putih">#ffffff</color>
+    <color name="abuabu">#d9d9d9</color>
+    <color name="blue">#2999e9</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff004d</color>
+    <color name="colortext">#100b20</color>
+    <color name="colorhint">#a9aaac</color>
+</resources>

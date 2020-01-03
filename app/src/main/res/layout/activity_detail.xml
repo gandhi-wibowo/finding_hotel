@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pertama">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/gambarHotel"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"/>
+            <RatingBar
+                android:id="@+id/hotelBintang"
+                style="@style/hotelRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/namaHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gambarHotel"
+                android:maxLines="2"
+                android:paddingTop="2dp"
+                android:paddingLeft="8dp"
+                android:textColor="#222"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/alamatHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namaHotel"
+                android:maxLines="3"
+                android:paddingLeft="8dp"
+                android:textSize="14dp"
+                android:paddingBottom="7dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="7dp"
+                android:id="@+id/desk"
+                android:background="#000000"
+                android:layout_above="@+id/deskripsiHotel"/>
+            <TextView
+                android:scrollbars = "vertical"
+                android:maxLines="9"
+                android:id="@+id/deskripsiHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alamatHotel"
+                android:paddingLeft="8dp"
+                android:textSize="14dp"
+                android:paddingBottom="5dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/lihatMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="Lihat Map "
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+</LinearLayout>

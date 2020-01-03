@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Pencarian Hotel</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_posisi">Map</string>
+</resources>

@@ -1,0 +1,97 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/gambar_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+        <RatingBar
+            android:id="@+id/hotelBintang"
+            style="@style/hotelRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gambar_hotel"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical"
+            android:paddingLeft="8dp">
+
+            <TextView
+                android:id="@+id/namaHotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/putih"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/JarakK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putih"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/Jarak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/putih"
+                    android:textSize="14sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/JarakK"
+                    android:layout_toEndOf="@+id/JarakK" />
+                <TextView
+                    android:id="@+id/WaktuU"
+                    android:textColor="@color/putih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/JarakK"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/Waktu"
+                    android:textColor="@color/putih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/Jarak"
+                    android:layout_toRightOf="@+id/WaktuU"
+                    android:layout_toEndOf="@+id/WaktuU" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/putih"
+                android:id="@+id/alamatHotel"
+                android:paddingBottom="5dp"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
